@@ -119,7 +119,7 @@ def baixar_xmls_sae_sp(
     senha,
     homologacao=False,
     diretorio="notas",
-    intervalo_segundos=2,
+    intervalo_segundos=1,
 ):
     """Baixa o XML de cada NFC-e da lista de chaves e salva em `diretorio/`.
 
