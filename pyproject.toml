@@ -1,0 +1,35 @@
+[project]
+name = "baixador"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Guto Marcicano",email = "caugmar@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests-pkcs12 (>=1.27,<2.0)",
+    "certifi-icpbr (>=2023.7.3,<2024.0.0)",
+    "pynfe (>=0.6.5,<0.7.0)",
+    "signxml (>=4.4.0,<5.0.0)",
+    "requests (>=2.34.2,<3.0.0)",
+    "pyopenssl (>=26.2.0,<27.0.0)",
+    "lxml (>=6.1.1,<7.0.0)",
+    "zeep (>=4.3.2,<5.0.0)",
+    "cryptography (>=48.0.0,<49.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "pandas (>=3.0.3,<4.0.0)",
+    "playwright (>=1.60.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "baixador", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ptipython (>=1.0.1,<2.0.0)"
+]
